@@ -1,0 +1,14 @@
+language: node_js
+node_js: node
+cache:
+  directories:
+  - node_modules
+env:
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: CWXTUethprPfOr2K4koXtGcdmIuc3G69vv2ijaSxps19EJ7zH5Rw9l/x8vmiX240nx0qN40VkDf1TdvmjX+OS4i/qj0alU6xV8uyeMdKiSmsw7qQuhbZ7eBrOxRbxOW1eY8M10UBSlwpkPLfNjK3vyer8NqK9q5JzNmxvK710ANzAP6K8YDy6KBAeQw8ZDZ05M+4nQfnw+pO0vQQDsSjav0Dt+8p/pv3xjjWJQvkO5JnxmGx8cAkwML8NxZ/DFvkLk47nppnOTy9sznP0BuiZOeRopWv6WRdHufsIzDX4Ql0IySvacPb+wwsYS9L+QGqPlDJU9v6K258yqtMG66iEp9VY2cJosJyJTobaTLO8+W349JJRjvDlesoaz8egxfEE9g4w2LeBdNCDDbCjTz9G2/Oxq1bUKhHErMUQXfmh3jcreXnFUM0bHJtk8JHMkXXr3J4n97Gg7P1P0cv8KYu/8LudgbzKtdVzJyRB1VJoL85NAluYIGBbbMCFMYwoQIXK1iUef3Bt0CUzPuhPSuEZduZDFQ0BTVmfVYwKiZpnfcqDYp883W0AfCOvhg20YGDZgyw7s0fxmq82FgsSuBMpVvfRxpher3AmFEWFlAr+eSaYvSq4gLwJsDiv22Zb0TMY4KskyScczedO3kFVEeiY3DxKefw+cCmUaex3mdFoDI=
+  app: damp-reaches-85414
+  on:
+    repo: hzba000/react-hot-cold-testing
